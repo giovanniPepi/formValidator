@@ -2,11 +2,15 @@
  form {
 	 max-width: 450px;
 	 margin: 0 auto;
+	 display: flex;
+	 flex-direction: column;
+	 gap: 1rem;
 }
  form > div {
 	 position: relative;
 	 background: white;
 	 border-bottom: 1px solid #ccc;
+	 border-radius: .5rem;	 
 }
  form > div > label {
 	 opacity: 0.3;
@@ -20,10 +24,12 @@
 	 border: 0;
 	 padding: 20px 20px 20px 50px;
 	 background: #eee;
+	 border-radius: .5rem;
 }
  form > div > input[type="text"]:focus, form > div > input[type="email"]:focus, form > div > input[type="password"]:focus {
 	 outline: 0;
 	 background: white;
+	 border-radius: .5rem;
 }
  form > div > input[type="text"]:focus + label, form > div > input[type="email"]:focus + label, form > div > input[type="password"]:focus + label {
 	 opacity: 0;
@@ -60,14 +66,16 @@
 	 display: block;
 	 width: 100%;
 	 margin: 20px 0;
-	 background: #41d873;
+	 background: #e9d51e;
+	 border-radius: .5rem;
 	 color: white;
 	 border: 0;
 	 padding: 20px;
-	 font-size: 1.2rem;
+	 font-size: 1.3rem;
+	 font-weight: bold;
 }
  body {
-	 background: #333;
+	 background: rgb(75, 75, 75);
 	 font-family: 'PT Sans', sans-serif;
 	 padding: 20px;
 }
