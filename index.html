@@ -8,10 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="#0" method="post"></form>
-    <div>
-        <input type="text" name="first_name" id="first_name">
-        <label for="first_name"></label></div>
-    
+    <form action="#0">
+        <div>
+            <input type="text" name="first_name" id="first_name" required placeholder="">        
+            <label for="first_name">First Name </label>
+        </div>
+        <div>
+            <input type="text" name="last_name" id="last_name" required placeholder="">
+            <label for="last_name">Last Name</label>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" required placeholder="">
+            <label for="email">Email address</label>
+            <div class="requirements">Must be a valid email address</div>
+        </div>
+        <div>
+            <input type="password" name="password" id="password" required placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+            <label for="password">Password</label>
+            <div class="requirements">Your password must be at least 6 characters, contain at least one uppercase, one lowercase, and one number</div>
+        </div>
+              
+        <input type="submit" value="Sign me up!">
+        
+    </form>
 </body>
 </html>
